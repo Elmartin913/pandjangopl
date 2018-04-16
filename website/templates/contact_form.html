@@ -1,0 +1,16 @@
+{% extends 'contact.html' %}
+
+{% block content %}
+
+    <form method="post">
+    {% csrf_token %}
+    {% include 'includes/form.html' %}
+
+        {% if send == 0 %}
+        <button type="submit" class="btn btn-success">Przekaż Brief</button>
+         {% else%}
+        <button type="submit" class="btn btn-success">Nowy brief</button>
+        {% endif %}
+    </form>
+
+{% endblock content%}

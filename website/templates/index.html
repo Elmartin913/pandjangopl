@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanDjango</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="{% static 'font-awesome-4.7.0/css/font-awesome.min.css' %}">
+    <!-- local -->
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/flav.png' %}" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav id="nav">
+            <div class="nav-container">
+                <a href="{% url 'index' %}"><img src="{% static 'img/logo1.png' %}" alt="logo-nav"></a>
+                <div class="menu-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#skill">Start</a></li>
+                <li><a href="#about">O mnie</a></li>
+                <li><a href="#projects">Portfolio</a></li>
+                <li><a href="{% url 'contact' %}">Kontakt</a></li>
+            </ul>
+        </nav>
+        <!--banner -->
+        <div id="banner">
+            <div class="banner-text">
+                <h1>&nbsp;&nbsp;Pan Django</h1>
+                <!-- <h4>Marcin Jabłonowski</h4>
+                <!-- Typing Animation -->
+                <h1 id="type-text">
+                    <a href="" class="typewrite disabled" data-period="2000"
+                       data-type='[
+                        "Cześć !",
+                        "Powołuję do życia.",
+                        "Strony internetowe.",
+                        "Aplikacje webowe.",
+                        "Kampanie marketingowe.",
+                        "Podejmij działanie!"
+                        ]'>
+                    <span class="wrap"></span>
+                    </a>
+                </h1>
+                <!-- End of Typing Animation -->
+                <a href="#skill">Dowiedz się więcej</a>
+            </div>
+
+        </div>
+    </header>
+    <!-- Section Skills -->
+    <section id="skill">
+        <!-- title -->
+        <div class="title">
+            <div class="title-text">
+                <h2 class="title-heading">Jak mogę pomóc ?</h2>
+                <div class="title-underline"></div>
+                <p class="title-subheading">Zobacz, która z usług jest Ci teraz najbardziej potrzebna.</p>
+            </div>
+        </div>
+        <!-- end of title -->
+        <div class="skill-center">
+            <!-- skill -->
+            <article class="skill">
+                <i class="fas fa-code fa-3x"></i>
+                <h3>Strony Internetowe</h3>
+                <p><b>
+                    Strona potrzebna „na już?”<br>
+                    Chcesz wersję strony na urządzenia mobilne?
+                    <br></b>
+                    Wykonujemy nowoczesne strony internetowe w technologii RWD (eng. Reponsive Web Design).
+                    Zapewnia to dopasowywanie się serwisu do wszelkich urządzeń wyposażonych w przeglądarki
+                    internetowe (smartfony, tablety, laptopy, smartTV).
+
+                </p>
+            </article>
+            <!-- skill -->
+            <article class="skill">
+                <i class="fas fa-database fa-3x"></i>
+                <h3>Aplikacje Webowe</h3>
+                <p><b>
+                    Masz pomysł na biznes?<br>
+                    Twoja fima potrzebije automatyzacji?
+                    <br></b>
+                    Dedykowana aplikacja internetowa napisana dla Twojej firmy pomoże Ci w rozwoju biznesu.
+                    Podczas tworzenia aplikacji spróbuję zrozumieć to jak działa Twoja firma i znaleźć miejsca,
+                    które można zautomatyzować bądź ulepszyć przy pomocy dedykowanej aplikacji.
+                </p>
+            </article>
+            <!-- skill -->
+            <article class="skill">
+                <i class="fas fa-chart-line fa-3x"></i>
+                <h3>Kampanie marketingowe</h3>
+                <p><b>
+                    Potrzebujesz więcej klientów?<br>
+                    Twoje działania marketingowe oparte są na strategii „jakoś to będzie?”
+                    <br></b>
+                    Warto poukładać działania i nadać im odpowiedni kierunek.
+                    Dedykowana kampania to coś, co dostarczy Tobie więcej drogocennych zleceń.
+                </p>
+            </article>
+        </div>
+    </section>
+    <!-- End of Section Skills -->
+    <!-- Section About -->
+    <section id="about">
+        <!-- title -->
+        <div class="title">
+            <div class="title-text">
+                <h2 class="title-heading">Kim jestem</h2>
+                <div class="title-underline"></div>
+
+            </div>
+        </div>
+        <!-- end of title -->
+        <div class="about-center">
+            <!-- skill -->
+            <article class="about-box">
+                <img src="{% static 'img/MJ_elips2.png' %}" alt="portrait">
+                <p>
+                    <span>Marcin Jabłonowski</span>
+                </p>
+
+                <br>
+                <p>
+                    Łaczę umiejętności front-endowca z umiejętnościami back-endowymi. Z jednej strony odpowiadam za to,
+                    jak strona jest wyświetlana w oknie przeglądarki oraz za jej funkcje i intuicyjność z perspektywy
+                    użytkownika. Z drugiej strony, dbam również o logikę działania aplikacji/strony, oraz
+                    sposobu w jaki aplikacja pobiera dane z bazy czy np. uwierzytelnia użytkownika.
+                    Uwielbiam wszystko, co przejrzyste i intuicyjne.
+                    Tworzone przeze mnie strony i aplikacje charakteryzują się wykorzystaniem nowoczesnych
+                    technologii webowych, dostosowaniem do współczesnych standardów i potrzeb klienta.
+                </p>
+                <br>
+                <p>
+                    Fascynuje mnie automatyzacja marketingu i reklama w Internecie. Sprowadzam do Twojego
+                    biznesu klientów dzięki kampaniom w social media. Reaktywuję listy mailingowe, optymalizuję lejki
+                    sprzedażowe, tworzę akcje promocyjne.
+                </p>
+                <br>
+
+                <p><span>Python / Django / Flask / Rest API / HTML / CSS / Bootstrap / JavaScript / JQuery</span></p>
+
+                <br><br><br>
+
+            </article>
+            <!-- skill -->
+        </div>
+    </section>
+    <!-- End of About Section  -->
+    <!-- Section Portfolio -->
+    <section id="projects">
+        <!-- title -->
+        <div class="title">
+            <div class="title-text">
+                <h2 class="title-heading">Portfolio</h2>
+                <div class="title-underline"></div>
+                <p class="title-subheading">Zobacz, która z usług jest Ci teraz najbardziej potrzebna.</p>
+            </div>
+        </div>
+        <!-- end of title -->
+        <div class="project-center">
+             <!-- single project -->
+            <article class="project-box">
+                <img src="{% static 'img/pic/PD.png' %}" alt="work-1">
+                <div class="img-footer">
+                    <div class="footer-info">
+                        <h3>PanPjango</h3>
+                        <h5>Web Application</h5>
+                        <div class="social-icons">
+
+                        </div>
+                    </div>
+                    <a href="https://github.com/Elmartin913/PanDjango">
+                        <i class="fab fa-github-square fa-2x"></i>
+                            </a>
+                    <a href="https://github.com/Elmartin913/StudManPro2" class="footer-icon"><i class="fa fa-arrow-right fa-2x"></i></a>
+                </div>
+            </article>
+            <!-- end of team member -->
+            <!-- single project -->
+            <article class="project-box">
+                <img src="{% static 'img/pic/studmanpro.png' %}" alt="work-1">
+                <div class="img-footer">
+                    <div class="footer-info">
+                        <h3>StudManPro</h3>
+                        <h5>Web Application</h5>
+                        <div class="social-icons">
+
+                        </div>
+                    </div>
+                    <a href="https://github.com/Elmartin913/StudManPro2">
+                        <i class="fab fa-github-square fa-2x"></i>
+                    </a>
+                    <a href="https://github.com/Elmartin913/StudManPro2" class="footer-icon"><i class="fa fa-arrow-right fa-2x"></i></a>
+                </div>
+            </article>
+            <!-- end of team member -->
+            <!-- single project -->
+            <article class="project-box">
+                <img src="{% static 'img/pic/funflat.png' %}" alt="work-1">
+                <div class="img-footer">
+                    <div class="footer-info">
+                        <h3>FunFlat</h3>
+                        <h5>Responsive Website</h5>
+                        <div class="social-icons">
+
+                        </div>
+                    </div>
+                    <a href="https://github.com/Elmartin913/websites/tree/master/funflat">
+                        <i class="fab fa-github-square fa-2x"></i>
+                    </a>
+                    <a href="{% url 'funflat' %}" class="footer-icon"><i class="fa fa-arrow-right fa-2x"></i></a>
+                </div>
+            </article>
+            <!-- end of team member -->
+            <!-- single project -->
+            <article class="project-box">
+                <img src="{% static 'img/pic/banana.png' %}" alt="work-1">
+                <div class="img-footer">
+                    <div class="footer-info">
+                        <h3>Banana</h3>
+                        <h5>Responsive Website</h5>
+                        <div class="social-icons">
+
+                        </div>
+                    </div>
+                    <a href="https://github.com/Elmartin913/websites/tree/master/banana">
+                        <i class="fab fa-github-square fa-2x"></i>
+                    </a>
+                    <a href="{% url 'banana' %}" class="footer-icon">
+                        <i class="fa fa-arrow-right fa-2x"></i>
+                    </a>
+
+                </div>
+            </article>
+            <!-- end of team member -->
+            <!-- single project -->
+            <article class="project-box">
+                <img src="{% static 'img/pic/agency.png' %}" alt="work-1">
+                <div class="img-footer">
+                    <div class="footer-info">
+                        <h3>Agency</h3>
+                        <h5>Responsive Website</h5>
+                        <div class="social-icons">
+
+
+                        </div>
+                    </div>
+                    <a href="https://github.com/Elmartin913/websites/tree/master/agency">
+                        <i class="fab fa-github-square fa-2x"></i>
+                    </a>
+                    <a href="{% url 'agency' %}" class="footer-icon"><i class="fa fa-arrow-right fa-2x"></i></a>
+                </div>
+            </article>
+            <!-- end of team member -->
+            <!-- single project -->
+            <article class="project-box">
+                <img src="{% static 'img/pic/fast.png' %}" alt="work-1">
+                <div class="img-footer">
+                    <div class="footer-info">
+                        <h3>Fast</h3>
+                        <h5>Responsive Website</h5>
+                        <div class="social-icons">
+
+                        </div>
+                    </div>
+                    <a href="https://github.com/Elmartin913/websites/tree/master/fast">
+                        <i class="fab fa-github-square fa-2x"></i>
+                    </a>
+                    <a href="{% url 'fast' %}" class="footer-icon"><i class="fa fa-arrow-right fa-2x"></i></a>
+                </div>
+            </article>
+            <!-- end of team member -->
+            <!-- single project -->
+            <article class="project-box">
+                <img src="{% static 'img/pic/stand.png' %}" alt="work-1">
+                <div class="img-footer">
+                    <div class="footer-info">
+                        <h3>The Gym</h3>
+                        <h5>Responsive Website
+                        </h5>
+                        <div class="social-icons">
+
+
+                        </div>
+                    </div>
+                    <a href="https://github.com/Elmartin913/websites/tree/master/standard">
+                        <i class="fab fa-github-square fa-2x"></i>
+                    </a>
+                    <a href="{% url 'stand' %}" class="footer-icon"><i class="fa fa-arrow-right fa-2x"></i></a>
+                </div>
+            </article>
+            <!-- end of team member -->
+
+
+        </div>
+
+    </section>
+    <!-- End of Project Section  -->
+
+
+
+
+
+    <!-- Section Contact -->
+    <section id="proposals">
+        <!-- title -->
+        <div class="proposal">
+            <div class="title-text banner-text">
+                <h2 class="title-heading">Potrzebujesz propozycji ?</h2>
+                <div class="title-underline"></div>
+                <p class="title-subheading">Skontaktuj się ze mną, aby uzyskać niezobowiązującą propozycję współpracy, na widok której chciwie się uśmiechniesz.</p>
+
+                <a href="{% url 'contact' %}">Skontaktuj się</a>
+
+            </div>
+        </div>
+        <!-- end of title -->
+
+    </section>
+    <!-- End of  Contact Section -->
+
+    <footer id="footer">
+        <div class="footer-center">
+            <article class="footer-box">
+                <img src="{% static 'img/logo1.png' %}" alt="">
+                <ul>
+                    <li><a href="https://github.com/Elmartin913"><i class="fab fa-github-square fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/marcin-jablonowski"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="{% url 'contact' %}"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+                    <li><a href="{% url 'contact' %}"><i class="fas fa-phone-square fa-2x"></i></a></li>
+                </ul>
+
+            </article>
+        </div>
+    </footer>
+    <footer id="second-footer">
+        <p>&copy; Copyright 2018 by pandjango.pl</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+    <script src="{% static 'fontawesome-all.js' %}"></script>
+    <script src="{% static 'script.js' %}"></script>
+    <script src="{% static 'typing.js' %}"></script>
+
+</body>
+
+</html>

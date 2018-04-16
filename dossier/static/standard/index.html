@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Gym - Personal Training</title>
+    <link href="css/jquery.bxslider.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css" type="text/css">
+    <link rel="stylesheet" href="css/waypoints.css" type='text/css'>
+    <script src="js/jquery.waypoints.min.js" type='text/javascript'></script>
+    <script src="js/waypoints.js" type='text/javascript'></script>
+
+</head>
+<body>
+    <header>
+        <div id="header-inner">
+        <a href="index.html" id="logo"></a>
+        <nav>
+            <a href="#" id="menu-icon"></a>
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="#">About</a></li>
+                 <li><a href="#">Facility</a></li>
+                <li><a href="#">Pricing</a></li>
+                 <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+<!--- Start Slider -->
+<section class="jumbotron">
+        <script src="js/jquery.bxslider.min.js"></script><!--For Image Slider-->
+
+        <!--- ADD IMAGE SLIDER HERE -->
+
+        <div class="slide-wrap">
+            <section class="slider">
+                <ul class="slider3">
+                    <li><img src="img/chest-fly.png" alt=""></li>
+                    <li><img src="img/push-ups.png" alt=""></li>
+                    <li><img src="img/inside-gym.png" alt=""></li>
+                    <li><img src="img/training.png" alt=""></li>
+                </ul>
+            </section>
+        </div>
+
+        <script type="text/javascript">
+            $('.slider1').bxSlider({
+                mode: 'fade',
+                captions: false,
+                auto:true,
+                pager:false,
+
+            });
+            $('.slider2').bxSlider({
+                pager:false,
+                captions: true,
+                maxSlides: 3,
+                minSlides: 1,
+                slideWidth: 230,
+                slideMargin: 10
+            });
+            $('.slider3').bxSlider({
+                mode: 'fade',
+                captions: false,
+                auto:true,
+                pager:false,
+                controls:false,
+            });
+        </script>
+</section>
+<!--- End Slider -->
+<div class="clearfix"></div>
+    <!--- <div id="inner-wraper"> -->
+
+<!-- Start Waypoints Delayed Animation -->
+<section class="staggered-animaton-container">
+
+    <section class="os-animation" data-os-animation="fadeInLeft" date-os-animation-delay=".3s">
+
+        <section class="one-third">
+            <div class="circle">
+                <td><i class="fa fa-users"></i></td>
+            </div>
+            <h3>Grade a Saff</h3>
+            <p>Here at The Gym we have the best training staff in tri-state area as we seek out and recruit talented trainers with all the right certification. Come in today and have a sit down with one of out trainers so we can help you meet your trainers so we can help you meet your goals in the fastest way possible!</p>
+        </section>
+
+    </section> <!-- end animation -->
+    <section class="os-animation" data-os-animation="fadeInDown" date-os-animation-delay=".3s">
+
+        <section class="one-third">
+            <div class="circle">
+                <td><i class="fa fa-map-marker"></i></td>
+            </div>
+            <h3>A convenient location</h3>
+            <p>Our location site near the center of four major roadway exits making it very convenient for gym goers and personal training clients to get their workouts in before or after work, even on short lunch break</p>
+        </section>
+
+    </section><!-- end animation -->
+    <section class="os-animation" data-os-animation="fadeInRight" date-os-animation-delay=".3s">
+
+        <section class="one-third">
+            <div class="circle">
+                <td><i class="fa fa-check-square-o"></i></td>
+            </div>
+            <h3>Check us for free!</h3>
+            <p>To show how confident we are in our facilities and their satisfying the needs of our clients, we offer a free two week pass so anyone interested can first get a feel for our Gym and decide whether on not they'd like to join. Call or come in today for your free pass!</p>
+        </section>
+
+    </section> <!-- end animation -->
+
+<div class="clearfix"></div>
+
+<section class="os-animation" data-os-animation="fadeInLeft" date-os-animation-delay=".3s">
+
+    <article>
+        <img src="img/gym-classes.png" alt="" class="circle-image">
+    </article>
+
+</section> <!-- end animation -->
+<section class="os-animation" data-os-animation="fadeInRight" date-os-animation-delay=".3s">
+
+    <aside>
+        <h3>OUR FACILITIES</h3>
+        <br>
+        <ul class="gym">
+            <li><h4>Unlimited wifi connection</h4></li>
+            <li><h4>Member music requests &amp; voting</h4></li>
+            <li><h4>Open 24 hours / 7 days a week</h4></li>
+            <li><h4>Cardio machine movie theater</h4></li>
+        </ul>
+    </aside>
+
+</section><!-- end animation -->
+
+<div class="clearfix"></div>
+
+<section class="os-animation" data-os-animation="bounceInLeft" date-os-animation-delay=".3s">
+
+    <section class="one-third">
+        <h3>Ladies Section</h3>
+        <img src="img/ladies-gym.jpg" alt="">
+        <p>Included in our facility is a 'ladies only' section of the gym where woman can workout to themselves.</p>
+    </section>
+</section><!-- end animation -->
+<section class="os-animation" data-os-animation="bounceInDown" date-os-animation-delay=".3s">
+
+    <section class="one-third">
+        <h3>The gym floor</h3>
+        <img src="img/gym-floor.jpg" alt="">
+        <p>Our gym floor is as spacious as they come, Enjoy scenic views from the cardio equipment on the third floor.</p>
+    </section>
+
+</section><!-- end animation -->
+<section class="os-animation" data-os-animation="bounceInRight" date-os-animation-delay=".3s">
+
+    <section class="one-third">
+        <h3>Free weights</h3>
+        <img src="img/free-weights.jpg" alt="">
+        <p>Our free weights section has an extensive collection of dumbbells and Olympic plates for body building.</p>
+    </section>
+</section><!-- end animation -->
+
+<!-- End Waypoints Delayed Animation -->
+</section>
+
+</div> <!--end inner wraper-->
+<div class="clearfix"></div>
+<!-- Footer Start -->
+    <footer>
+        <div id="footer-inner">
+            <section class="one-third" id=footer-third>
+                <h3>Contact</h3><br>
+                <p class="footercontact">The Gym <br> <b class="phon">555-525-5005</b><br><br>500 Washington Road <br>Seatle, WA 98101</p>
+            </section>
+            <section class="one-third" id=footer-third>
+                <h3>Social</h3><br>
+                <ul class="social">
+                    <li><a href="https://www.facebook.com/w3newbie" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://www.facebook.com/w3newbie" target="_blank"><i class="fa fa-youtube"></i></a></li>
+                     <li><a href="https://www.facebook.com/w3newbie" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.facebook.com/w3newbie" target="_blank"><i class="fa fa-pinterest"></i></a></li>
+                </ul>
+            </section>
+            <section class="one-third" id=footer-third>
+                <h3>PAGES</h3><br>
+                <h5>
+                    <a href="index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Facility</a>
+                    <a href="#">pricing</a>
+                    <a href="#">contact</a>
+
+                </h5>
+            </section>
+        </div>
+    </footer>
+    <footer class="second">
+        <p>&copy; The Gym, 2017.</p>
+    </footer>
+
+</body>
+</html>
