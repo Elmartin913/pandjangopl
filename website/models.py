@@ -22,7 +22,7 @@ class Topic(models.Model):
     def __str__(self):
         return self.subject
 
-
+'''
 class Post(models.Model):
     message = models.TextField(max_length=4000)
     topic = models.ForeignKey(Topic, related_name='posts', on_delete=models.CASCADE)
@@ -31,14 +31,14 @@ class Post(models.Model):
     created_by = models.ForeignKey(User, related_name='posts', on_delete=models.CASCADE)
     updated_by = models.ForeignKey(User, null=True, related_name='+', on_delete=models.CASCADE)
 
-
+'''
 class Contact(models.Model):
     name = models.CharField(max_length=128, null=True, verbose_name='Nadawca')
     subject = models.CharField(max_length=255, blank=True, verbose_name='Temat')
     message = models.TextField(max_length=4000, verbose_name='Wiadomość')
     email = models.CharField(max_length=70,blank=True, verbose_name='Email')
     mobile = models.CharField(max_length=9, blank=True, null=True,default='000000000', verbose_name='Telefon')
-    time_add = models.TimeField(auto_now_add=True)
+    created = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         verbose_name = 'Wiadomość'
@@ -47,3 +47,11 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Sms(models.Model):
+    name = models.CharField(max_length=32, null=True, verbose_name='Imię')
+    mobile = models.CharField(max_length=9, blank=True, null=True, verbose_name='Telefon')
+    body = models.CharField(max_length=140, verbose_name='Wiadomość')
+    sms_send = models.BooleanField(default=False)
+    created = models.DateTimeField(auto_now_add=True)

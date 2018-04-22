@@ -3,7 +3,7 @@ from django.core.validators import validate_email
 from .validators import phone_validator
 
 
-from .models import Contact
+from .models import Contact, Sms
 
 class ContactForm(forms.ModelForm):
     name = forms.CharField(
@@ -27,7 +27,27 @@ class ContactForm(forms.ModelForm):
         validators=[phone_validator],
         required=False,
     )
-
     class Meta:
         model = Contact
         fields = [ 'name', 'email', 'mobile', 'message']
+
+
+class SmsForm(forms.ModelForm):
+    name = forms.CharField(
+        widget=forms.TextInput(attrs={'rows': 1, 'placeholder': '*Imie'}),
+        max_length=128,
+        required=True,
+    )
+    mobile = forms.CharField(
+        widget=forms.TextInput(attrs={'rows': 1, 'type': 'number', 'placeholder': '*Telefon'}),
+        validators=[phone_validator],
+        required=True,
+    )
+    body = forms.CharField(
+        widget=forms.Textarea(attrs={'rows': 3, 'placeholder': '*Wiadomość'}),
+        required=True,
+        max_length= 140,
+    )
+    class Meta:
+        model = Sms
+        fields = ['name','mobile', 'body']

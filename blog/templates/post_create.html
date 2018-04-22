@@ -1,0 +1,24 @@
+{% extends 'board2.html' %}
+
+{% load static %}
+
+{% block stylesheet %}
+  <link rel="stylesheet" href="{% static 'css/simplemde.css' %}">
+{% endblock stylesheet %}
+
+{% block title %} New Postost {% endblock title %}
+
+{% block content %}
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit">
+    </form>
+{% endblock content %}
+
+{% block javascript %}
+  <script src="{% static 'js/simplemde.js' %}"></script>
+  <script>
+    var simplemde = new SimpleMDE();
+  </script>
+{% endblock javascript %}

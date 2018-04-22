@@ -4,6 +4,9 @@
 ###decouple###
 .env
 
+###sqlite###
+.sqlite3
+
 ### Django ###
 *.log
 *.pot

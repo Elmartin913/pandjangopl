@@ -1,0 +1,25 @@
+{% extends 'base_blog.html' %}
+
+{% block title %}Blog post{% endblock title %}
+
+{% block content %}
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Tytuł</th>
+            <th>Autor</th>
+            <th>Treść</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+              <td>{{ post.title }}<small class="text-muted d-block">{{ post.publish }}</small></td>
+                <td>{{ post.author }}</td>
+              <td >{{ post.get_body_as_markdown }}</td>
+              <td>{{ post.status }}</td>
+            </tr>
+        </tbody>
+      </table>
+{% endblock content %}

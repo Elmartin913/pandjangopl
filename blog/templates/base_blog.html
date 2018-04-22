@@ -1,0 +1,87 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PanDjango</title>
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- local -->
+    <link rel="stylesheet" href="{% static 'contact/main.css' %}">
+    <link rel="shortcut icon" type="image/png" href="{% static 'img/flav.png' %}" />
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <nav id="nav">
+            <div class="nav-container">
+
+                <a href="{% url 'index' %}">
+                    <img src="{% static 'img/logo1.png' %}" alt="logo-nav">
+                </a>
+                <div class="menu-btn">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+        </nav>
+        <!--banner -->
+    </header>
+    <!-- Section Posts -->
+    <section id="post_id">
+        <!-- title -->
+        <div class="title">
+            <div class="title-text">
+                <h2 class="title-heading">{% block title %}{% endblock title %}</h2>
+                <div class="title-underline"></div>
+            </div>
+        </div>
+        <!-- end of title -->
+        <div class="post-center">
+            <!-- skill -->
+            
+            <!-- skill -->
+            <article class="post">
+                {% block content %}
+                {% endblock content %}
+            </article>
+
+        </div>
+    </section>
+    <!-- End of Section Skills -->
+
+ 
+
+    <footer id="footer">
+        <div class="footer-center">
+            <article class="footer-box">
+                <img src="{% static 'img/logo1.png'%}" alt="">
+                <ul>
+                    <li><a href="https://github.com/Elmartin913"><i class="fab fa-github-square fa-2x"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/marcin-jablonowski"><i class="fab fa-linkedin fa-2x"></i></a></li>
+                    <li><a href="{% url 'contact' %}"><i class="fas fa-envelope-square fa-2x"></i></a></li>
+                    <li><a href="{% url 'contact' %}"><i class="fas fa-phone-square fa-2x"></i></a></li>
+                </ul>
+
+            </article>
+        </div>
+    </footer>
+    <footer id="second-footer">
+        <p>&copy; Copyright 2018 by pandjango.pl</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
+    <script src="{% static 'fontawesome-all.js' %}"></script>
+    <script src="{% static 'script.js' %}"></script>
+</body>
+
+</html>

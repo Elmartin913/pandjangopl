@@ -1,0 +1,31 @@
+{% extends 'base_blog.html' %}
+
+{% block title %}Blog{% endblock title %}
+
+{% block content %}
+    <div class="container">
+      <ol class="breadcrumb my-4">
+        <li class="breadcrumb-item active">Boards</li>
+      </ol>
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Tytuł</th>
+            <th>Autor</th>
+            <th>Treść</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for obj in posts %}
+            <tr>
+              <td>{{ obj.title }}<small class="text-muted d-block">{{ obj.publish }}</small></td>
+                <td>{{ obj.author }}</td>
+              <td >{{ obj.body }}</td>
+              <td>{{ obj.status }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+{% endblock content %}

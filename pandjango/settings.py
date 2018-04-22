@@ -29,7 +29,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = True
+#DEBUG = False
 DEBUG = config('DEBUG', default=False, cast=bool)
 
 #ALLOWED_HOSTS = []
@@ -48,10 +48,12 @@ INSTALLED_APPS = [
     # external app
     'widget_tweaks',
     'twilio',
+    'markdown',
     #my apps
     'website',
     'accounts',
     'dossier',
+    'blog',
 ]
 
 MIDDLEWARE = [

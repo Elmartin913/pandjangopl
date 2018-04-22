@@ -26,15 +26,17 @@ from django.contrib.auth.views import (
     PasswordChangeDoneView,
 )
 
-from website.views import StartView, ContactView, BoardView
+from website.views import StartView, ContactView, SmsFormView, BoardView
 from accounts.views import signup
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', StartView.as_view(), name='index'),
     path('contact', ContactView.as_view(), name='contact'),
+    path('sms', SmsFormView.as_view(), name='sms'),
     path('board', BoardView.as_view(), name='board'),
     path('dossier/', include('dossier.urls'), name='dossier'),
+    path('blog/', include('blog.urls'), name='blog'),
     #acconts
     path('signup', signup, name='signup'),
     path('logout', LogoutView.as_view(), name='logout'),
